@@ -1,0 +1,288 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Press Start 2P", Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    background: transparent;
+    overflow-x: hidden;
+}
+
+
+.video-fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-shadow: 3px 3px #000;
+}
+
+
+/* =========================
+   LISTA
+========================= */
+
+.lista {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+/* =========================
+   CATEGORIA
+========================= */
+
+.categoria {
+    background-color: rgba(85, 85, 85, 0.9);
+    border: 2px solid #222;
+    min-height: 150px;
+}
+
+.categoria h2 {
+    background-color: rgba(51, 51, 51, 0.95);
+
+    padding: 15px 8px;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* =========================
+   FILME
+========================= */
+
+.filme {
+    background-color: rgba(102, 102, 102, 0.9);
+
+    min-height: 100px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.filme span {
+    width: 100%;
+
+    font-size: 10px;
+    text-align: center;
+
+    word-break: break-word;
+}
+
+
+/* =========================
+   AÇÕES
+========================= */
+
+.acoes {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+button {
+    background-color: #727272;
+    color: white;
+
+    border: 2px solid #222;
+    border-top-color: #aaa;
+    border-left-color: #aaa;
+
+    padding: 8px 14px;
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #858585;
+}
+
+button:active {
+    border-top-color: #222;
+    border-left-color: #222;
+
+    border-bottom-color: #aaa;
+    border-right-color: #aaa;
+}
+
+
+/* =========================
+   ADICIONAR
+========================= */
+
+.adicionar {
+    margin-top: 30px;
+
+    padding: 12px 25px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FORMULÁRIOS
+========================= */
+
+.formulario {
+    width: 90%;
+    max-width: 500px;
+
+    margin: auto;
+    padding: 25px;
+
+    background-color: rgba(85, 85, 85, 0.9);
+
+    border: 2px solid #222;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.formulario label {
+    font-size: 12px;
+    text-align: left;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: #333;
+    color: white;
+
+    border: 2px solid #222;
+    border-top-color: #aaa;
+    border-left-color: #aaa;
+
+    font-family: Arial, sans-serif;
+
+    outline: none;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    background-color: #444;
+}
+
+
+/* =========================
+   BOTÕES DO FORMULÁRIO
+========================= */
+
+.botoes-formulario {
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   MENSAGEM
+========================= */
+
+#mensagem {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+.erro {
+    color: #ff5555;
+}
+
+.sucesso {
+    color: #55ff55;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .lista {
+        grid-template-columns: 1fr;
+    }
+
+}
