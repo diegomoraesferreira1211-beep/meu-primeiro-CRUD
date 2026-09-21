@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Adicionar Filme</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+
+    <video
+        class="video-fundo"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+    >
+
+        <source
+            src="./sons-e-evideo/menu.mp4"
+            type="video/mp4"
+        >
+
+    </video>
+
+
+    <div class="conteudo">
+
+        <h1>Adicionar Filme</h1>
+
+
+        <form
+            id="formFilme"
+            class="formulario"
+        >
+
+            <label for="nome">
+                Nome do filme
+            </label>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite o nome do filme"
+            >
+
+
+            <label for="categoria">
+                Categoria
+            </label>
+
+            <select id="categoria">
+
+                <option value="">
+                    Selecione uma categoria
+                </option>
+
+                <option value="Filmes que eu amei">
+                    Filmes que eu amei
+                </option>
+
+                <option value="Filmes que eu chorei">
+                    Filmes que eu chorei
+                </option>
+
+                <option value="Filmes que eu revi muitas vezes">
+                    Filmes que eu revi muitas vezes
+                </option>
+
+                <option value="Filmes que eu odiei">
+                    Filmes que eu odiei
+                </option>
+
+            </select>
+
+
+            <div class="botoes-formulario">
+
+                <button type="submit">
+                    Adicionar
+                </button>
+
+
+            </div>
+
+
+            <p id="mensagem"></p>
+
+        </form>
+
+    </div>
+
+
+    <script src="adicionar.js"></script>
+
+</body>
+
+</html>
+

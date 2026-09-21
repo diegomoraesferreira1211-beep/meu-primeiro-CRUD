@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Lista de Filmes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <video
+        class="video-fundo"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+    >
+        <source
+            src="./sons-e-evideo/menu.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+    <div class="conteudo">
+
+        <h1>Minha Lista de Filmes</h1>
+
+        <div
+            class="lista"
+            id="listaFilmes"
+        >
+        </div>
+
+
+        <button
+            class="adicionar"
+            onclick="window.location.href='adicionar.html'"
+        >
+            Adicionar Filme
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
